@@ -1,0 +1,161 @@
+@media (max-width:600px) {
+
+  .profile-field {
+    padding-top: 12%;
+    padding-right: 0;
+  }
+
+
+  .title {
+    font-family: serif;
+    font-size: 2em;
+  }
+
+  .text-profile-content {
+    font-family: serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  header {
+    margin-bottom: 0;
+    padding: 0 15px;
+  }
+
+  .menu-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .menu-nav a,
+  .space-bar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-nav-wrapper {
+    margin-bottom: 5%;;
+  }
+
+  .phone-menu-nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .phone-menu-nav a {
+    background-color: rgba(255, 153, 51, 1);
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .my-contents {
+    display: grid;
+  }
+
+  .my-content {
+    margin-bottom: 4%;
+  }
+
+  .text-my-content {
+    letter-spacing: 0;
+    text-align: justify;
+  }
+
+  #about-content-btn {
+    padding: 10px 20px;
+  }
+
+  .my-content:last-child {
+    margin-left: 0;
+  }
+
+  .profile-contents {
+    display: block;
+    text-align: center;
+  }
+
+  .profile-icon {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    margin-top: 5%;
+  }
+
+  .text-profile-field {
+    text-align: justify;
+    padding: 0 2%;
+  }
+
+  .sub-title {
+    font-family: serif;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-top: 6%;
+  }
+
+  .text-ja {
+    border-bottom: 2px solid #f0821e;
+    letter-spacing: 0;
+  }
+
+  .works {
+    display: block;
+    margin: 10% 0 5% 0;
+    width: 100%;
+  }
+
+  .work {
+    background-color: rgba(255, 255, 255, 0.4);
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    margin: 2% 0;
+  }
+
+  .other-works {
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5% 0;
+    width: 100%;
+    display: none;
+  }
+
+  .other-work {
+    background-image: url(../images/works1-1-img.png);
+    background-color: rgba(255, 255, 255, 0.4);
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    margin: 2% 0;
+  }
+
+  .btns {
+    display: block;
+    margin: 10% 5%;
+  }
+
+  .contact-btn {
+    background-color: #f0821e;
+    border-radius: 6px;
+    color: #fff;
+    display: block;
+    letter-spacing: 1px;
+    margin-bottom: 4%;
+    padding: 15px 100px;
+  }
+
+
+}
