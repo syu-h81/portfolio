@@ -21,7 +21,7 @@ a:hover {
 }
 
 .top-wrapper {
-  background-image: url(../images/top-bg.png);
+  background-image: url(https://syu-h81.github.io/portfolio/top-bg.png);
   background-color: rgba(255, 255, 255, 0.2);
   background-blend-mode: lighten;
   background-repeat: no-repeat;
@@ -109,7 +109,6 @@ li {
 }
 
 .my-content-title {
-  /*color: #ff9933;*/
   font-size: 1.5em;
 }
 
@@ -222,23 +221,23 @@ li {
 }
 
 #work5 {
-  background-image: url(../images/work5-1-img.png);
+  background-image: url(https://syu-h81.github.io/portfolio/work5-1-img.png);
 }
 
 #work4 {
-  background-image: url(../images/works4-1-img.png);
+  background-image: url(https://syu-h81.github.io/portfolio/works4-1-img.png);
 }
 
 #work3 {
-  background-image: url(../images/works3-1-img.png);
+  background-image: url(https://syu-h81.github.io/portfolio/works3-1-img.png);
 }
 
 #work2 {
-  background-image: url(../images/works2-1-img.png);
+  background-image: url(https://syu-h81.github.io/portfolio/works2-1-img.png);
 }
 
 #work1 {
-  background-image: url(../images/works1-1-img.png);
+  background-image: url(https://syu-h81.github.io/portfolio/works1-1-img.png);
 }
 
 .work-btn {
@@ -265,7 +264,6 @@ li {
 }
 
 .other-work {
-  background-image: url(../images/works1-1-img.png);
   background-color: rgba(255, 255, 255, 0.4);
   background-size: cover;
   color: #fff;
@@ -276,26 +274,26 @@ li {
 }
 
 #other-work4 {
-  background-image: url(../images/other-work4-1-img.png);
+  background-image: url(https://syu-h81.github.io/portfolio/other-work4-1-img.png);
 }
 
 #other-work3 {
-  background-image: url(../images/other-work3-1-img.png);
+  background-image: url(https://syu-h81.github.io/portfolio/other-work3-1-img.png);
 }
 
 #other-work2 {
-  background-image: url(../images/other-work2-1-img.png);
+  background-image: url(https://syu-h81.github.io/portfolio/other-work2-1-img.png);
 }
 
 #other-work1 {
-  background-image: url(../images/other-work1-1-img.png);
+  background-image: url(https://syu-h81.github.io/portfolio/other-work1-1-img.png);
 }
 
 
 
 
 .contact-wrapper {
-  background-image: url(../images/contact-bg2.png);
+  background-image: url(https://syu-h81.github.io/portfolio/contact-bg2.png);
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
   background-size: contain;
