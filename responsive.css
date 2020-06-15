@@ -168,6 +168,10 @@
   .production-right {
     width: 100%;
   }
+  
+  .production-left {
+    margin-bottom: 15%;
+  }
 
   .text-impression {
     width: 100%;
