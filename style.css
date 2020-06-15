@@ -330,3 +330,121 @@ li {
 .fa-angle-up {
   color: #fff;
 }
+
+
+  /*work.html系のスタイルシート*/
+
+  .production-wrapper .container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .production-left {
+    text-align: justify;
+    width: 55%;
+  }
+
+  .production-title {
+    background-color: rgba(254, 207, 141, 0.2);
+    border-left: 4px solid #f5a500;
+    padding: 5px 0;
+    padding-left: 10px;
+  }
+
+  .top-production-title {
+    margin-top: 0;
+  }
+
+  .production-sub-title {
+    border-bottom: 2px solid #f5a500;
+    width: 80%;
+  }
+
+  .text-impression {
+    line-height: 200%;
+    padding-right: 20px;
+    width: 80%;
+  }
+
+  .td-title {
+    background-color: rgba(255, 140, 0, 1);
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .text-td {
+    background-color: rgba(221, 221, 221, 0.6);
+    padding: 10px 5px;
+  }
+
+  .portfolio {
+    width: 100%;
+    height: auto;
+  }
+
+  .production-right {
+    width: 40%;
+  }
+
+  .my-pro-contents {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+  }
+
+  .my-pro-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .my-pro-name {
+    font-family: century;
+  }
+
+  .text-my-pro-contents {
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .profile-btn {
+    background-color: rgba(0, 160, 220, 1);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+  }
+
+  .sns-field {
+    display: flex;
+    justify-content: space-around;
+    padding: 8% 4%;
+  }
+
+  .sns {
+    border-radius: 50%;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .sns a {
+    color: #fff;
+  }
+
+  .twitter {
+    background-color: #3ab4ff;
+  }
+
+  .instagram {
+    background-image: linear-gradient(#8490c8, #ed1c24);
+  }
+
+  .facebook {
+    background-color: #3b8df7;
+  }
+
+  .folio {
+    background-color: #cc7965;
+  }
