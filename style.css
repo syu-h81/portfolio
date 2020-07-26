@@ -13,6 +13,45 @@ a:hover {
   color: blue;
 }
 
+/*アニメーションのCSS*/
+  .top-wrapper,
+  header,
+  .my-contents-wrapper {
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+    animation: fadeIn 2s ease 0s 1 normal;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0
+    }
+
+    100% {
+      opacity: 1
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0
+    }
+
+    100% {
+      opacity: 1
+    }
+  }
+
+  .fade-animetion {
+    transform:translateY(50px);
+    opacity:0;
+    transition : all 600ms;
+  }
+
+  .fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 .container {
   max-width: 1170px;
   width: 100%;
