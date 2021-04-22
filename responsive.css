@@ -42,6 +42,7 @@
   }
 
   .main-nav {
+    display: block;
     padding-right: 8%;
   }
 
@@ -108,6 +109,10 @@
     transform:translateX(-300px);
     opacity:0;
     transition : all 1s;
+  }
+
+  .responsive-menu li a {
+    color: #fff;
   }
 
   .slideL-fadein {
@@ -212,6 +217,7 @@
     height: auto;
     text-align: justify;
     padding-left: 0;
+    padding-right: 0;
   }
 
   .text-profile-field h3 {

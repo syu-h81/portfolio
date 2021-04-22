@@ -275,6 +275,10 @@ li {
   display: inline-block;
 }
 
+.active-page {
+  padding-left: 8%;
+}
+
 .prev-next-btn-block {
   display: flex;
   justify-content: space-between;
@@ -467,7 +471,7 @@ footer {
   padding: 4% 0;
 }
 
-.footer-nav li {
+.footer-nav li a {
   color: #fff;
 }
 
@@ -483,7 +487,7 @@ footer {
     bottom: 20px;
     right: 0;
     padding: 5px 15px;
-    background-color: #ddd;
+    background-color: rgba(0,0,0,.7);
     border-radius: 50%;
   }
 
