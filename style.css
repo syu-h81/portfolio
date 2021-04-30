@@ -417,6 +417,10 @@ li {
   width: 13%;
 }
 
+.fa-vuejs {
+  color: green;
+}
+
 .fa-php {
   color: #B0C4DE;
 }
