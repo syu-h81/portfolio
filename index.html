@@ -6,6 +6,7 @@
 
     <!-- stylesheets , responsive -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 
@@ -74,113 +75,106 @@
         <span class="text-ja">制作実績</span>
         <ul class="works-btn">
           <li id="work1" class="work-btn"><span>愛寿会</span></li>
-          <li id="work2" class="work-btn"><span>株式会社WEDS</span></li>
-          <li id="work3" class="work-btn"><span>Smart Be8</span></li>
-          <li id="work4" class="work-btn"><span>earth design lab</span></li>
-          <li id="work5" class="work-btn"><span>SMILE SUMAI</span></li>
-          <li id="work6" class="work-btn"><span>建築会社</span></li>
+          <li id="work2" class="work-btn"><span>宮越ホールディングス</span></li>
+          <li id="work3" class="work-btn"><span>SMILE SUMAI</span></li>
+          <li id="work4" class="work-btn"><span>株式会社WEDS</span></li>
+          <li id="work5" class="work-btn"><span>smart be8</span></li>
+          <li id="work6" class="work-btn"><span>earth design lab</span></li>
         </ul>
-        <div id="slider-work" class="works-contents-block">
-          <article id="work-1" class="work-content-block-area content-slide-show">
-            <div class="work-contents-area work-slide-show">
-              <div class="work-img-area">
-                <img src="aijukai.png" alt="">
+        <div class="swiper works-contents-block">
+          <div id="slider-work" class="swiper-wrapper easeInOutBack">
+            <article id="work-1" class="swiper-slide work-content-block-area content-slide-show">
+              <div class="work-contents-area work-slide-show">
+                <div class="work-img-area">
+                  <img src="aijukai.png" alt="">
+                </div>
+                <div class="work-info-area">
+                  <h3 class="work-name">愛寿会 コーポレートサイト</h3>
+                  <p>愛寿会のHPを制作しました。<br>
+                    担当内容は、各ページのコーディング、アニメーションを実装した動的サイト、WordPressへの組み込みを担当しました。<br>
+                    使用言語・ツールは、HTML,CSS, JQuery, WordPress, gitを使用しました。
+                  </p>
+                  <a href="http://www.aijukai.com/">リンク先へ</a>
+                </div>
               </div>
-              <div class="work-info-area">
-                <h3 class="work-name">愛寿会 コーポレートサイト</h3>
-                <p>愛寿会のHPを制作しました。<br>
-                  担当内容は、各ページのコーディング、アニメーションを実装した動的サイト、WordPressへの組み込みを担当しました。<br>
-                  使用言語・ツールは、HTML,CSS, JQuery, WordPress, gitを使用しました。
-                </p>
-                <a href="http://www.aijukai.com/">リンク先へ</a>
-                <span class="active-page">1/6</span>
+            </article>
+            <article id="work-2" class="swiper-slide work-content-block-area content-slide-show">
+              <div class="work-contents-area work-slide-show">
+                <div class="work-img-area">
+                  <img src="miyakoshi-holdings.png" alt="">
+                </div>
+                <div class="work-info-area">
+                  <h3 class="work-name">宮越ホールディングス</h3>
+                  <p>宮越ホールディングスのＨＰを制作しました。<br>
+                     担当内容は、各ページのコーディング、アニメーションを実装した動的サイト、WordPressへの組み込みを担当しました。
+                     使用言語・ツールは、HTML,CSS, JQuery, WordPress, gitを使用しました。
+                  </p>
+                  <a href="https://www.miyakoshi-holdings.com/">リンク先へ</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article id="work-2" class="work-content-block-area content-slide-show">
-            <div class="work-contents-area work-slide-show">
-              <div class="work-img-area">
-                <img src="weds.png" alt="">
+            </article>
+            <article id="work-3" class="swiper-slide work-content-block-area content-slide-show">
+              <div class="work-contents-area work-slide-show">
+                <div class="work-img-area">
+                  <img src="smilesumai.png" alt="">
+                </div>
+                <div class="work-info-area">
+                  <h3 class="work-name">SMILE SUMAI</h3>
+                  <p>SMILE SUMAIのＨＰを制作しました。<br>
+                    担当内容は、各ページのコーディング、スライダーの実装を担当しました。<br>                   
+                    使用言語・ツールは、HTML,CSS, Vue.js, WordPressを使用しました。
+                  </p>
+                  <a href="https://www.danshin-smile.com/">リンク先へ</a>
+                </div>
               </div>
-              <div class="work-info-area">
-                <h3 class="work-name">株式会社WEDS</h3>
-                <p>株式会社WEDSのトップページを制作しました。<br>
-                  担当内容は、トップページのコーディング、アニメーションを取り入れた動的サイトの実装を担当しました。<br>
-                  使用言語・ツールは、HTML,CSS, JQuery, Dropboxを使用しました。
-                </p>
-                <a href="https://hirock-lab.com/weds/">リンク先へ</a>
-                <span class="active-page">2/6</span>
+            </article>
+            <article id="work-4" class="swiper-slide work-content-block-area content-slide-show">
+              <div class="work-contents-area work-slide-show">
+                <div class="work-img-area">
+                  <img src="weds.png" alt="">
+                </div>
+                <div class="work-info-area">
+                  <h3 class="work-name">株式会社WEDS</h3>
+                  <p>株式会社WEDSのトップページを制作しました。<br>
+                    担当内容は、トップページのコーディング、アニメーションを取り入れた動的サイトの実装を担当しました。<br>
+                    使用言語・ツールは、HTML,CSS, JQuery, Dropboxを使用しました。
+                  </p>
+                  <a href="https://hirock-lab.com/weds/">リンク先へ</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article id="work-3" class="work-content-block-area content-slide-show">
-            <div class="work-contents-area work-slide-show">
-              <div class="work-img-area">
-                <img src="smartbe8.png" alt="">
+            </article>
+            <article id="work-5" class="swiper-slide work-content-block-area content-slide-show">
+              <div class="work-contents-area work-slide-show">
+                <div class="work-img-area">
+                  <img src="smartbe8.png" alt="">
+                </div>
+                <div class="work-info-area">
+                  <h3 class="work-name">smart be8</h3>
+                  <p>担当内容は、セミナー・イベントページのコーディング、カレンダーの実装を担当しました。<br>
+                    使用言語・ツールは、HTML,CSS, Javascript, WordPressを使用しました。
+                  </p>
+                  <a href="https://smartbe8.com/seminar-list/">リンク先へ</a>
+                </div>
               </div>
-              <div class="work-info-area">
-                <h3 class="work-name">smart be8</h3>
-                <p>担当内容は、セミナー・イベントページのコーディング、カレンダーの実装を担当しました。<br>
-                  使用言語・ツールは、HTML,CSS, Javascript, WordPressを使用しました。
-                </p>
-                <a href="https://smartbe8.com/seminar-list/">リンク先へ</a>
-                <span class="active-page">3/6</span>
+            </article>
+            <article id="work-6" class="swiper-slide work-content-block-area content-slide-show">
+              <div class="work-contents-area work-slide-show">
+                <div class="work-img-area">
+                  <img src="earthdesign-lab.png" alt="">
+                </div>
+                <div class="work-info-area">
+                  <h3 class="work-name">earth design lab</h3>
+                  <p>担当内容は、各ページのコーディング、カレンダーの実装を担当しました。<br>
+                    使用言語・ツールは、HTML,CSS, Javascript, jQuery, WordPress, Dropboxを使用しました。
+                  </p>
+                  <a href="http://earthdesign-lab.com/">リンク先へ</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article id="work-4" class="work-content-block-area content-slide-show">
-            <div class="work-contents-area work-slide-show">
-              <div class="work-img-area">
-                <img src="earthdesign-lab.png" alt="">
-              </div>
-              <div class="work-info-area">
-                <h3 class="work-name">earth design lab</h3>
-                <p>担当内容は、各ページのコーディング、カレンダーの実装を担当しました。<br>
-                  使用言語・ツールは、HTML,CSS, Javascript, jQuery, WordPress, Dropboxを使用しました。
-                </p>
-                <a href="http://earthdesign-lab.com/">リンク先へ</a>
-                <span class="active-page">4/6</span>
-              </div>
-            </div>
-          </article>
-          <article id="work-5" class="work-content-block-area content-slide-show">
-            <div class="work-contents-area work-slide-show">
-              <div class="work-img-area">
-                <img src="smilesumai.png" alt="">
-              </div>
-              <div class="work-info-area">
-                <h3 class="work-name">SMILE SUMAI</h3>
-                <p>担当内容は、各ページのコーディング、スライダーの実装を担当しました。<br>
-                  使用言語・ツールは、HTML,CSS, Vue.js, WordPressを使用しました。
-                </p>
-                <a href="https://www.danshin-smile.com/">リンク先へ</a>
-                <span class="active-page">5/6</span>
-              </div>
-            </div>
-          </article>
-          <article id="work-6" class="work-content-block-area content-slide-show">
-            <div class="work-contents-area work-slide-show">
-              <div class="work-img-area">
-                <img src="LP_Architecture.png" alt="">
-              </div>
-              <div class="work-info-area">
-                <h3 class="work-name">建築会社</h3>
-                <p>デザイン、コーディングの練習として架空サイトを制作しました。<br>
-                  使用言語・ツールは、Adobe XD, HTML,CSSを使用しました。
-                </p>
-                <a href="Architecture_HP.png">全体画面へ</a>
-                <span class="active-page">6/6</span>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="prev-next-btn-block">
-          <div id="prev" class="swiper-button-prev swiper-btn" onclick='prevContent()'>
-            <img src="ic_prev.png" alt="">
+            </article>
           </div>
-          <div id="next" class="swiper-button-next swiper-btn" onclick='nextContent()'>
-            <img src="ic_next.png" alt="">
-          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </section><!-- works-wrapper -->
@@ -346,9 +340,10 @@
       </a>
     </div>
 
-    <script src="script.js"></script>
     <script src="smoothscroll.js"></script>
     <script src="particles.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

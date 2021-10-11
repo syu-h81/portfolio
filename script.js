@@ -45,34 +45,6 @@ $(function(){
   });
 });
 
-//works-contentsのスライドアニメーションの実装
-let current = 0;
-let slider = document.getElementById('slider-work');
-//----------- ID slider-workを取得　--------
-let imageArray = slider.getElementsByClassName('work-content-block-area');
-imageArray[current].style.display = 'block';
-
-
-function prevContent() {
-  imageArray[current].style.display = 'none';
-  if(current <= imageArray.length + 1){
-    current = 0;
-  }else{
-    current = -1;  
-  }
-  imageArray[current].style.display = 'block';
-}
-
-function nextContent(){
-  imageArray[current].style.display = 'none';
-  if(current >= imageArray.length - 1){
-    current = 0;
-  }else{
-    current += 1;  
-  }
-  imageArray[current].style.display = 'block';
-}
-
 //// works-wrapperのコンテンツボタンのクリック実装  //////
 $(function() {
   $('#work1').on('click', function() {
@@ -99,7 +71,21 @@ $(function() {
     $('#work-6').show();
     $('#work-1, #work-2, #work-3, #work-4, #work-5').hide();
   })
-})
+});
+
+//works コンテンツswiper
+let mySwiper = new Swiper ('.swiper', {
+  speed: 800,
+  loop: true, 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
 
 
 ////  スキルの回転アニメーションの実装  /////
@@ -127,4 +113,3 @@ $(function() {
     }
   });
 });
-
