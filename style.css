@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background: #000;
 }
 
 canvas {
@@ -174,6 +175,7 @@ li {
   opacity: 0;
   transition: 1.4s;
   transform: translateY(80px);
+  color: #fff;
 }
 
 .text-ja {
@@ -198,7 +200,6 @@ li {
 /* works-wrapper */
 .works-wrapper {
   padding-bottom: 10%;
-  background: #f8f8f8;
   position: relative;
 }
 
@@ -211,17 +212,18 @@ li {
 }
 
 .work-btn {
-  background: #fff;
-  border: 1px solid red;
+  border: 1px solid #fff;
   font-size: 0.8em;
   letter-spacing: 1px;
   padding: 20px 5px;
   margin: 4% 6%;
+  color: #fff;
 }
 
 .work-btn:hover {
-  background: rgb(197, 2, 2);
-  color: #fff;
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
   transition: .3s;
 }
 
@@ -249,20 +251,16 @@ li {
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
 }
 
-/*#slider-work .work-content-block-area {
-  display: none;
-}*/
-
 #slider-work .work-contents-area {
   width: 60%;
   height: auto;
-  background: #fff;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
   padding: 3% 4%;
-  border: 1px solid #c1c1c1;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .work-img-area {
@@ -297,8 +295,18 @@ li {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #000;
+  color: #fff;
   width: 25%;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 1;
 }
 
 /* about-wrapper */
@@ -320,7 +328,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background-color: #222;
   margin: 0 auto;
   padding: 4% 0;
   width: 90%;
@@ -344,6 +352,7 @@ li {
   text-align: justify;
   padding-left: 8%;
   padding-right: 8%;
+  color: #fff;
 }
 
 .text-profile-field h3 {
@@ -368,12 +377,12 @@ li {
   grid-template-columns: 1fr 1fr 1fr;
   width: 80%;
   margin: 0 auto;
-  background: #f8f8f8;
+  color: #fff;
 }
 
 .skill-block-area {
   padding: 12% 0;
-  border: 1px solid #DCDCDC;
+  border: 1px solid #fff;
 }
 
 .skill-block-fadeIn {
