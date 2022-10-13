@@ -45,34 +45,6 @@ $(function(){
   });
 });
 
-//// works-wrapperのコンテンツボタンのクリック実装  //////
-$(function() {
-  $('#work1').on('click', function() {
-    $('#work-1').show();
-    $('#work-2,#work-3, #work-4, #work-5, #work-6').hide();
-  })
-  $('#work2').on('click', function() {
-    $('#work-2').show();
-    $('#work-1,#work-3, #work-4, #work-5, #work-6').hide();
-  })
-  $('#work3').on('click', function() {
-    $('#work-3').show();
-    $('#work-1,#work-2, #work-4, #work-5, #work-6').hide();
-  })
-  $('#work4').on('click', function() {
-    $('#work-4').show();
-    $('#work-1, #work-2, #work-3, #work-5, #work-6').hide();
-  })
-  $('#work5').on('click', function() {
-    $('#work-5').show();
-    $('#work-1, #work-2, #work-3, #work-4, #work-6').hide();
-  })
-  $('#work6').on('click', function() {
-    $('#work-6').show();
-    $('#work-1, #work-2, #work-3, #work-4, #work-5').hide();
-  })
-});
-
 //works コンテンツswiper
 let mySwiper = new Swiper ('.swiper', {
   speed: 800,
