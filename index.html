@@ -1,271 +1,513 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>portfolio</title>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
 
-    <!-- stylesheets , responsive -->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+  <!-- cssファイルの読み込み -->
+  <link rel="stylesheet" href="assets/css/destyle.css"> 
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+  <!-- fontawesome 読み込み -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- font awwsome -->
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  </head>
-  <body class="main">
-    <div id="particles-js"></div>
-    <section id="home" class="top-wrapper">
-      <div class="container">
-        <span class="top-portfolio">Portfolio</span>
-        <h1 class="name">Syu Danjo</h1>
-      </div>
-    </section><!-- top -->
+  <!-- google fonts読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- jquery読み込み -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/three@0.142.0/build/three.min.js"></script>
+</head>
+<body>
+  <div class="loading">
+    <div class="spinner">
+      <span style="--i:1;" class="spinner-Ball spinner-Ball_1"></span>
+      <span style="--i:2;" class="spinner-Ball spinner-Ball_2"></span>
+      <span style="--i:3;" class="spinner-Ball spinner-Ball_3"></span>
+      <span style="--i:4;" class="spinner-Ball spinner-Ball_4"></span>
+      <span style="--i:5;" class="spinner-Ball spinner-Ball_5"></span>
+      <span style="--i:6;" class="spinner-Ball spinner-Ball_6"></span>
+      <span style="--i:7;" class="spinner-Ball spinner-Ball_7"></span>
+      <span style="--i:8;" class="spinner-Ball spinner-Ball_8"></span>
+      <span style="--i:9;" class="spinner-Ball spinner-Ball_9"></span>
+      <span style="--i:10;" class="spinner-Ball spinner-Ball_10"></span>
+      <span style="--i:11;" class="spinner-Ball spinner-Ball_11"></span>
+      <span style="--i:12;" class="spinner-Ball spinner-Ball_12"></span>
+      <span style="--i:13;" class="spinner-Ball spinner-Ball_13"></span>
+      <span style="--i:14;" class="spinner-Ball spinner-Ball_14"></span>
+      <span style="--i:15;" class="spinner-Ball spinner-Ball_15"></span>
+      <span style="--i:16;" class="spinner-Ball spinner-Ball_16"></span>
+      <span style="--i:17;" class="spinner-Ball spinner-Ball_17"></span>
+      <span style="--i:18;" class="spinner-Ball spinner-Ball_18"></span>
+      <span style="--i:19;" class="spinner-Ball spinner-Ball_19"></span>
+      <span style="--i:20;" class="spinner-Ball spinner-Ball_20"></span>
+    </div>
+  </div>
+  <!-- loading画面 -->
 
-    <header class="header">
-      <div class="container">
-        <div class="header-containers">
-          <a href="index.html"><h2 class="portfolio">portfolio</h2></a>
-          <nav>
-            <ul class="main-nav">
-              <div id="toggle" class="menu-toggle">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-                <span class="bar3"></span>
-              </div>
-              <li><a href="#home">HOME</a></li>
-              <span class="bar">|</span>
-              <li><a href="#works">WORKS</a></li>
-              <span class="bar">|</span>
-              <li><a href="#about">ABOUT</a></li>
-              <span class="bar">|</span>
-              <li><a href="#skill">SKILL</a></li>
-              <span class="bar">|</span>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-          </nav>
+  <header class="header">
+    <div class="st-Container header-Container">
+      <div class="header-Inner">
+        <div class="header-Logo_area">
+          <div class="header-Logo"><a href="#hero">Portfolio</a></div>
+        </div>
+        <div class="header-List_area">
+          <ul class="header-List">
+            <li class="header-Item"><a href="#about" class="header-Item_link anchor">ABOUT</a></li>
+            <li class="header-Item"><a href="#profile" class="header-Item_link anchor">PROFILE</a></li>
+            <li class="header-Item"><a href="#works" class="header-Item_link anchor">WORKS</a></li>
+            <li class="header-Item"><a href="#skill" class="header-Item_link anchor">SKILL</a></li>
+            <li class="header-Item"><a href="#message" class="header-Item_link anchor">MESSAGE</a></li>
+          </ul>
+          <div id="toggle" class="menu-Toggle">
+            <span class="bar bar_1"></span>
+            <span class="bar bar_2"></span>
+            <span class="bar bar_3"></span>
+          </div>
         </div>
       </div>
-    </header><!-- header -->
+    </div>
+  </header>
 
-
-    <div id="slideL" class="responsive-menu-wrapper">
-      <div class="container slide-inner">
-        <ul class="responsive-menu">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#works">WORKS</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skill">SKILL</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+  <div class="sp-Menu_block">
+    <div class="sp-Menu_container st-Container">
+      <div class="sp-Menu_inner">
+        <ul class="sp-Menu_list">
+          <li class="sp-Menu_item"><a href="#about" class="sp-Menu_link">ABOUT</a></li>
+          <li class="sp-Menu_item"><a href="#profile" class="sp-Menu_link">PROFILE</a></li>
+          <li class="sp-Menu_item"><a href="#works" class="sp-Menu_link">WORKS</a></li>
+          <li class="sp-Menu_item"><a href="#skill" class="sp-Menu_link">SKILL</a></li>
+          <li class="sp-Menu_item"><a href="#message" class="sp-Menu_link">MESSAGE</a></li>
         </ul>
       </div>
-    </div><!-- responsive-menu -->
+    </div>
+  </div><!-- sp-Menu_block -->
 
-    <section id="works" class="works-wrapper">
-      <div class="container">
-        <h2 class="section-title works-title">Works</h2>
-        <span class="text-ja">制作実績</span>
-        <div class="swiper works-contents-block">
-          <div id="slider-work" class="swiper-wrapper easeInOutBack">
-            <article id="work-1" class="swiper-slide work-content-block-area content-slide-show">
-              <div class="work-contents-area work-slide-show">
-                <div class="work-img-area">
-                  <img src="aijukai.png" alt="">
-                </div>
-                <div class="work-info-area">
-                  <h3 class="work-name">愛寿会 コーポレートサイト</h3>
-                  <p>愛寿会のHPを制作しました。<br>
-                    担当内容は、各ページのコーディング、アニメーションを実装した動的サイト、WordPressへの組み込みを担当しました。<br>
-                    使用言語・ツールは、HTML,CSS, JQuery, WordPress, gitを使用しました。
+  <section id="hero" class="hero-Block background">
+    <div class="hero-Container st-Container">
+      <div class="hero-Inner">
+        <div class="hero-Title_inner">
+          <div class="hero-Title_area">
+            <div class="hero-Title">Portfolio</div>
+            <div class="hero-Name">Syu Danjo</div>
+          </div>
+        </div>
+        <div class="hero-Scroll_down_area">
+          <div class="hero-Scroll_down_bar"></div>
+        </div>
+        <div class="hero-Bg_circles_area">
+          <div class="hero-Bg_circle"></div>
+          <div class="hero-Bg_circle"></div>
+          <div class="hero-Bg_circle"></div>
+          <div class="hero-Bg_circle"></div>
+          <div class="hero-Bg_circle"></div>
+          <div class="hero-Bg_circle"></div>
+          <div class="hero-Bg_circle"></div>
+          <div class="hero-Bg_circle"></div>
+          <div class="hero-Bg_circle"></div>
+          <div class="hero-Bg_circle"></div>
+        </div>
+      </div>
+    </div>
+  </section><!-- hero-Block -->
+
+  <section id="about" class="about-Block">
+    <div class="about-Container st-Container">
+      <div class="about-Title_inner">
+        <div class="about-Title_area">
+          <h2 class="about-Title">About Site</h2>
+          <p class="about-Title_text">
+            ここはエンジニアSyu.Danjoのポートフォリオサイトです。<br class="pc-Line">
+            これまでに手がけた制作物、知識やスキルをまとめています。<br class="pc-Line">
+            あなたに、私のことをもっと深く知ってほしいと思って作りました。<br class="pc-Line">
+            どうぞごゆっくりとサイト内を散策してください。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section><!-- about-Block -->
+
+  <section id="profile" class="profile-Block">
+    <div class="profile-Container st-Containe">
+      <div class="profile-Inner">
+        <div class="profile-Area">
+          <div class="profile-Img_area">
+            <img src="assets/images/profile_img.png" alt="">
+          </div>
+          <div class="profile-Text_area">
+            <div class="profile-Career_area">
+              <h3 class="profile-Career_title">PROFILE career</h3>
+              <p class="profile-Career_text">
+                広島県出身のエンジニア。大学進学のため上京し、IT分野に興味を持ち実務で経験を積みたいと思い中退。
+                その後web制作会社、SI企業にて、フロントエンドエンジニアを3年間経験してきました。<br>様々な案件に携わる中バックエンドにも関わり、技術の幅を広げて参りました。得意な業務経験は、Webサイト・サービスのコーディングやRESAS APIによる非同期データ取得、 webpackでのパッケージ管理、アニメーションなどの動的サイトの実装、WordPressへの組み込み構築・カスタマイズなど、主にバック・フロント部分のコーディングを得意としています。<br><br>
+                現在は、フロントエンドエンエンジニアのフリーランスとして活動中。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="work-Block">
+    <div class="work-Container st-Container">
+      <div class="work-Inner">
+        <div class="work-Title_inner">
+          <h2 class="work-Title st-Title">Works</h2>
+          <p class="work-Title_text">実際の業務で開発した制作物をご紹介します</p>
+        </div>
+        <div class="work-Content_inner">
+          <div class="work-Content_area work-Content_area_0">
+            <a class="work-Content_card" href="#modal0">
+              <img src="assets/images/aijukai.png" class="work-Content_img" alt="">
+              <p class="work-Content_name">愛寿会</p>
+            </a>
+          </div> 
+          <div class="work-Content_area work-Content_area_1">
+            <a class="work-Content_card" href="#modal1">
+              <img src="assets/images/m-holdings.png" class="work-Content_img" alt="">
+              <p class="work-Content_name">宮越ホールデイングス</p>
+            </a>
+          </div>  
+          <div class="work-Content_area work-Content_area_2">
+            <a class="work-Content_card" href="#modal2">
+              <img src="assets/images/smile_sumai.png" class="work-Content_img" alt="">
+              <p class="work-Content_name">SMILE SUMAI</p>
+            </a>        
+          </div>  
+          <div class="work-Content_area work-Content_area_3">
+            <a class="work-Content_card" href="#modal3">
+              <img src="assets/images/weds.png" class="work-Content_img" alt="">
+              <p class="work-Content_name">株式会社ヒロックラボ</p>
+            </a>            
+          </div>  
+          <div class="work-Content_area work-Content_area_4">
+            <a class="work-Content_card" href="#modal4">
+              <img src="assets/images/smartbe8.png" class="work-Content_img" alt="">
+              <p class="work-Content_name">Smart Be8</p>
+            </a>
+          </div>  
+          <div class="work-Content_area work-Content_area_5">
+            <a class="work-Content_card" href="#modal5">
+              <img src="assets/images/earth_design_lab.png" class="work-Content_img" alt="">
+              <p class="work-Content_name">earth design lab</p>
+            </a>           
+          </div>  
+        </div>
+        <div class="work-Modal_inner">
+          <div class="work-Modal_card work-Modal_card_0 st-Work_modal_card" id="modal0">
+            <div class="work-Modal_card_flex">
+              <div class="work-Modal_card_text_inner">
+                <div class="work-Modal_card_detail_area">
+                  <h3 class="work-Modal_card_title work-Modal_card_title_0 st-Subttl">愛寿会</h3>
+                  <p class="work-Modal_card_text">
+                    愛寿会のHPを制作しました。<br>
+                    担当内容は、各下層ページのコーディング、アニメーションの実装、WordPressへの組み込みを担当しました。
+                    意識した部分は、デザインを見た時に共通のパーツが多いと感じ、同クラス名で少ないコーディングで作業する事を意識しました。
                   </p>
-                  <a href="http://www.aijukai.com/">リンク先へ</a>
+                  <div class="work-Modal_card_link_area">
+                    <i class="fa-solid fa-link"></i>
+                    <a class="work-Modal_card_link" href="http://www.aijukai.com/">リンク先</a>
+                  </div>
+                </div>
+                <div class="work-Modal_card_dev_area">
+                  <h3 class="work-Modal_card_dev_title st-Subttl">使用言語など</h3>
+                  <p class="work-Modal_card_dev_text">
+                    HTML/CSS(Sass),PHP,WordPress,JQuery,github(開発環境),git(プロジェクト管理)
+                  </p>
                 </div>
               </div>
-            </article>
-            <article id="work-2" class="swiper-slide work-content-block-area content-slide-show">
-              <div class="work-contents-area work-slide-show">
-                <div class="work-img-area">
-                  <img src="miyakoshi-holdings.png" alt="">
-                </div>
-                <div class="work-info-area">
-                  <h3 class="work-name">宮越ホールディングス</h3>
-                  <p>宮越ホールディングスのＨＰを制作しました。<br>
-                     担当内容は、各ページのコーディング、アニメーションを実装した動的サイト、WordPressへの組み込みを担当しました。
-                     使用言語・ツールは、HTML,CSS, JQuery, WordPress, gitを使用しました。
-                  </p>
-                  <a href="https://www.miyakoshi-holdings.com/">リンク先へ</a>
+              <div class="work-Modal_card_img_inner">
+                <div class="work-Modal_card_img_area">
+                  <img src="assets/images/aijukai.png" alt="">
                 </div>
               </div>
-            </article>
-            <article id="work-3" class="swiper-slide work-content-block-area content-slide-show">
-              <div class="work-contents-area work-slide-show">
-                <div class="work-img-area">
-                  <img src="smilesumai.png" alt="">
+              <div class="work-modalClose_inner">
+                <span class="modalClose">&times;</span>
+              </div>
+            </div>
+          </div>
+          <div class="work-Modal_card work-Modal_card_1 st-Work_modal_card" id="modal1">
+            <div class="work-Modal_card_flex">
+              <div class="work-Modal_card_text_inner">
+                <div class="work-Modal_card_detail_area">
+                  <h3 class="work-Modal_card_title work-Modal_card_title_1 st-Subttl">宮越ホールディングス</h3>
+                  <p class="work-Modal_card_text">
+                    宮越ホールディングスのHPを制作しました。<br>
+                    担当内容は、各ページのコーディング、アニメーションの実装、WordPressへの組み込みを担当しました。
+                    要素を重ねる部分が多く、少し高度なデザインを実装しました。
+                  </p>
+                  <div class="work-Modal_card_link_area">
+                    <i class="fa-solid fa-link"></i>
+                    <a class="work-Modal_card_link" href="https://www.miyakoshi-holdings.com/">リンク先</a>
+                  </div>
                 </div>
-                <div class="work-info-area">
-                  <h3 class="work-name">SMILE SUMAI</h3>
-                  <p>SMILE SUMAIのＨＰを制作しました。<br>
-                    担当内容は、各ページのコーディング、スライダーの実装を担当しました。<br>                   
+                <div class="work-Modal_card_dev_area">
+                  <h3 class="work-Modal_card_dev_title st-Subttl">使用言語など</h3>
+                  <p class="work-Modal_card_dev_text">
+                    HTML/CSS(Sass),PHP,WordPress,JQuery,github(開発環境),git(プロジェクト管理)
+                  </p>
+                </div>
+              </div>
+              <div class="work-Modal_card_img_inner">
+                <div class="work-Modal_card_img_area">
+                  <img src="assets/images/m-holdings.png" alt="">
+                </div>
+              </div>
+              <div class="work-modalClose_inner">
+                <span class="modalClose">&times;</span>
+              </div>
+            </div>
+          </div>
+          <div class="work-Modal_card work-Modal_card_2 st-Work_modal_card" id="modal2">
+            <div class="work-Modal_card_flex">
+              <div class="work-Modal_card_text_inner">
+                <div class="work-Modal_card_detail_area">
+                  <h3 class="work-Modal_card_title work-Modal_card_title_2 st-Subttl">SMILE SUMAI</h3>
+                  <p class="work-Modal_card_text">
+                    SMILE SUMAIのホームページを制作しました。
+                    担当内容は、各ページのコーディング、スライダーの実装を担当しました。                 
                     使用言語・ツールは、HTML,CSS, Vue.js, WordPressを使用しました。
                   </p>
-                  <a href="https://www.danshin-smile.com/">リンク先へ</a>
+                  <div class="work-Modal_card_link_area">
+                    <i class="fa-solid fa-link"></i>
+                    <a class="work-Modal_card_link" href="https://www.danshin-smile.com/">リンク先</a>
+                  </div>
+                </div>
+                <div class="work-Modal_card_dev_area">
+                  <h3 class="work-Modal_card_dev_title st-Subttl">使用言語など</h3>
+                  <p class="work-Modal_card_dev_text">
+                    HTML/CSS(Sass),PHP,WordPress,JQuery,github(開発環境),git(プロジェクト管理)
+                  </p>
                 </div>
               </div>
-            </article>
-            <article id="work-4" class="swiper-slide work-content-block-area content-slide-show">
-              <div class="work-contents-area work-slide-show">
-                <div class="work-img-area">
-                  <img src="weds.png" alt="">
+              <div class="work-Modal_card_img_inner">
+                <div class="work-Modal_card_img_area">
+                  <img src="assets/images/smile_sumai.png" alt="">
                 </div>
-                <div class="work-info-area">
-                  <h3 class="work-name">株式会社WEDS</h3>
-                  <p>株式会社WEDSのトップページを制作しました。<br>
-                    担当内容は、トップページのコーディング、アニメーションを取り入れた動的サイトの実装を担当しました。<br>
+              </div>
+              <div class="work-modalClose_inner">
+                <span class="modalClose">&times;</span>
+              </div>
+            </div>
+          </div>
+          <div class="work-Modal_card work-Modal_card_3 st-Work_modal_card" id="modal3">
+            <div class="work-Modal_card_flex">
+              <div class="work-Modal_card_text_inner">
+                <div class="work-Modal_card_detail_area">
+                  <h3 class="work-Modal_card_title work-Modal_card_title_3 st-Subttl">株式会社ヒロックラボ</h3>
+                  <p class="work-Modal_card_text">
+                    株式会社ヒロックラボのリニューアルを制作しました。
+                    担当内容は、各ページのコーディング、アニメーションを取り入れた動的サイトの実装を担当しました。
                     使用言語・ツールは、HTML,CSS, JQuery, Dropboxを使用しました。
                   </p>
-                  <a href="https://hirock-lab.com/weds/">リンク先へ</a>
+                  <div class="work-Modal_card_link_area">
+                    <i class="fa-solid fa-link"></i>
+                    <a class="work-Modal_card_link" href="https://hirock-lab.com/weds/">リンク先</a>
+                  </div>
+                </div>
+                <div class="work-Modal_card_dev_area">
+                  <h3 class="work-Modal_card_dev_title st-Subttl">使用言語など</h3>
+                  <p class="work-Modal_card_dev_text">
+                    HTML/CSS(Sass),PHP,WordPress,JQuery,github(開発環境),git(プロジェクト管理)
+                  </p>
                 </div>
               </div>
-            </article>
-            <article id="work-5" class="swiper-slide work-content-block-area content-slide-show">
-              <div class="work-contents-area work-slide-show">
-                <div class="work-img-area">
-                  <img src="smartbe8.png" alt="">
+              <div class="work-Modal_card_img_inner">
+                <div class="work-Modal_card_img_area">
+                  <img src="assets/images/weds.png" alt="">
                 </div>
-                <div class="work-info-area">
-                  <h3 class="work-name">smart be8</h3>
-                  <p>担当内容は、セミナー・イベントページのコーディング、カレンダーの実装を担当しました。<br>
+              </div>
+              <div class="work-modalClose_inner">
+                <span class="modalClose">&times;</span>
+              </div>
+            </div>
+          </div>
+          <div class="work-Modal_card work-Modal_card_4 st-Work_modal_card" id="modal4">
+            <div class="work-Modal_card_flex">
+              <div class="work-Modal_card_text_inner">
+                <div class="work-Modal_card_detail_area">
+                  <h3 class="work-Modal_card_title work-Modal_card_title_4 st-Subttl">Smart Be8</h3>
+                  <p class="work-Modal_card_text">
+                    担当内容は、セミナー・イベントページのコーディング、カレンダーの実装を担当しました。
                     使用言語・ツールは、HTML,CSS, Javascript, WordPressを使用しました。
                   </p>
-                  <a href="https://smartbe8.com/seminar-list/">リンク先へ</a>
+                  <div class="work-Modal_card_link_area">
+                    <i class="fa-solid fa-link"></i>
+                    <a class="work-Modal_card_link" href="https://smartbe8.com/seminar-list/">リンク先</a>
+                  </div>
+                </div>
+                <div class="work-Modal_card_dev_area">
+                  <h3 class="work-Modal_card_dev_title st-Subttl">使用言語など</h3>
+                  <p class="work-Modal_card_dev_text">
+                    HTML/CSS(Sass),PHP,WordPress,JQuery,github(開発環境),git(プロジェクト管理)
+                  </p>
                 </div>
               </div>
-            </article>
-            <article id="work-6" class="swiper-slide work-content-block-area content-slide-show">
-              <div class="work-contents-area work-slide-show">
-                <div class="work-img-area">
-                  <img src="earthdesign-lab.png" alt="">
+              <div class="work-Modal_card_img_inner">
+                <div class="work-Modal_card_img_area">
+                  <img src="assets/images/smartbe8.png" alt="">
                 </div>
-                <div class="work-info-area">
-                  <h3 class="work-name">earth design lab</h3>
-                  <p>担当内容は、各ページのコーディング、カレンダーの実装を担当しました。<br>
+              </div>
+              <div class="work-modalClose_inner">
+                <span class="modalClose">&times;</span>
+              </div>
+            </div>
+          </div>
+          <div class="work-Modal_card work-Modal_card_5 st-Work_modal_card" id="modal5">
+            <div class="work-Modal_card_flex">
+              <div class="work-Modal_card_text_inner">
+                <div class="work-Modal_card_detail_area">
+                  <h3 class="work-Modal_card_title work-Modal_card_title_5 st-Subttl">earth design lab</h3>
+                  <p class="work-Modal_card_text">
+                    担当内容は、各ページのコーディングの実装を担当しました。
                     使用言語・ツールは、HTML,CSS, Javascript, jQuery, WordPress, Dropboxを使用しました。
                   </p>
-                  <a href="http://earthdesign-lab.com/">リンク先へ</a>
+                  <div class="work-Modal_card_link_area">
+                    <i class="fa-solid fa-link"></i>
+                    <a class="work-Modal_card_link" href="http://earthdesign-lab.com/">リンク先</a>
+                  </div>
+                </div>
+                <div class="work-Modal_card_dev_area">
+                  <h3 class="work-Modal_card_dev_title st-Subttl">使用言語など</h3>
+                  <p class="work-Modal_card_dev_text">
+                    HTML/CSS(Sass),PHP,WordPress,JQuery,github(開発環境),git(プロジェクト管理)
+                  </p>
                 </div>
               </div>
-            </article>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </section><!-- works-wrapper -->
-
-    <section id="about" class="about-wrapper">
-      <div class="container">
-        <h2 class="section-title about-title">ABOUT</h2>
-        <span class="text-ja about-text-ja">自己紹介</span>
-        <div class="profile-contents">
-          <div class="profile-img-field">
-            <img src="profile-icon.jpg" alt="">
-          </div>
-          <div class="text-profile-field">
-            <h3>ABOUT career</h3>
-            <p>Web制作会社にて、フロントエンドエンジニアとして、コーポレートサイト等の構築を主に担当。<br>
-              その後、バックエンドにも関わり、技術の幅を広げて参りました。<br>
-              <br>
-              具体的な業務経験は、Webサイト・サービスのコーディングやRESAS APIによる非同期データ取得、
-              webpackでのパッケージ管理、アニメーションなどの動的サイトの実装、WordPressへの組み込み構築・カスタマイズなど、主にバック・フロント部分を得意としています。<br>
-            </p>
-            <h3>ABOUT me</h3>
-            <p>1998年生まれ、広島県尾道市出身。大学進学を気に、上京する。
-              大学を中退後、独学でフロント系の言語を習得し、フロントエンドの会社にてフロントエンドエンジニアの業務を2年経験。<br>
-              <br>
-              現在は、フロント中心の案件を対応し、フリーランスとして活動中。
-            </p>
+              <div class="work-Modal_card_img_inner">
+                <div class="work-Modal_card_img_area">
+                  <img src="assets/images/earth_design_lab.png" alt="">
+                </div>
+              </div>
+              <div class="work-modalClose_inner">
+                <span class="modalClose">&times;</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section><!-- about-wrapper -->
-
-    <section id="skill" class="skill-wrapper">
-      <div class="container">
-        <h2 class="section-title">SKILL</h2>
-        <span class="text-ja skill-text-ja">現在の技術レベル</span>
-        <div class="skill-block">
-          <div id="skill-html-css" class="skill-block-area">
-            <i class="fab fa-html5 fa-3x"></i>
-            <h3 class="skill-name">HTML/CSS</h3>
-            <p>デザインに沿ったコーディングが可能です。タグなどは、積極的に活用していき、SEOを深く意識したコーディングを提供出来ます</p>
-          </div>
-          <div id="skill-sass" class="skill-block-area">
-            <i class="fab fa-sass fa-3x"></i>
-            <h3 class="skill-name">Sass</h3>
-            <p>デザインに沿ったスタイルシートが可能です。Sassを利用することで通常よりもコードの量を大きく減らすことを目的として提供出来ます</p>           
-          </div>
-          <div id="skill-javascript" class="skill-block-area">
-            <i class="fab fa-js-square fa-3x"></i>
-            <h3 class="skill-name">Javascript</h3>
-            <p>アニメーションを利用した動的サイトの実装が可能です。jsのライブラリやフレームワークも活用し、無駄のないプログラムを提供出来ます</p>        
-          </div>
-          <div id="skill-jquery" class="skill-block-area">
-            <img class="jquery-icon" src="jQuery_icon.png" alt="">
-            <h3 class="skill-name">JQuery</h3>
-            <p>jsと同様、アニメーションを利用した動的サイトの実装が可能です。JQueryの特徴でもある、HTML/CSSの操作を簡単に操作させるようにプログラムを提供出来ます</p>          
-          </div>
-          <div id="vue" class="skill-block-area">
-            <i class="fab fa-vuejs fa-3x"></i>
-            <h3 class="skill-name">Vue.js</h3>
-            <p>アニメーションを利用した動的サイトの実装が可能です。また、コンポーネント化してパーツを制作、SPAの開発を提供出来ます</p>           
-          </div>
-          <div id="php" class="skill-block-area">
-            <i class="fab fa-php fa-3x"></i>
-            <h3 class="skill-name">PHP</h3>
-            <p>お問い合わせフォームやログイン機能の実装等、webアプリの開発が可能です。wpの構築やデータベースなどの経験があり、基本的なバックエンド側のプログラムを提供出来ます</p>           
-          </div>
-          <div id="skill-wordpress" class="skill-block-area">
-            <i class="fab fa-wordpress fa-3x"></i>
-            <h3 class="skill-name">WordPress</h3>
-            <p>オリジナルサイトの組み込み、テンプレートテーマのカスタマイズが可能です。その他にも、functions機能の追加、プラグインの作成、ブログ化をしたり制作・運用も提供出来ます</p> 
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <footer>
-      <div class="container">
-        <ul class="footer-nav">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#works">WORKS</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skill">SKILL</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-        <span class="copy-right">copyright@Syu Danjo. All Rights Reserved</span>
-      </div>
-    </footer>
-
-    <div id="page-top">
-      <a class="page-top-btn" href="#home">
-        <i class="fas fa-angle-up fa-3x"></i>
-      </a>
     </div>
+  </section><!-- work-Block -->
 
-    <script src="smoothscroll.js"></script>
-    <script src="particles.min.js"></script>
-    <script src="app.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <section id="skill" class="skill-Block">
+    <div class="skill-Container st-Container">
+      <div class="skill-Inner">
+        <div class="skill-Title_inner">
+          <h2 class="skill-Title st-Title">SKILL</h2>
+          <p class="skill-Title_text">
+            修練のすえ身につけたスキルをレダーチャートにまとめました。フロントからバックエンドまで幅広くスキルアップに取り組んできました。
+            オールラウンドに対応できる点が強みですが、バックエンドがわは全体的に理解が浅く、専門性の低さを認識しています。
+            今後はバックエンド系の開発（クラウド含む）の業務に携わる比率を増やし、フルスタックとして少しずつ専門性を高めていきたいと考えています。
+          </p>
+        </div>
+        <div class="skill-Chart_inner">
+          <div class="skill-Chart_area frontChart">
+            <canvas id="frontChart"></canvas>
+          </div>
+          <div class="skill-Chart_area backChart">
+            <canvas id="backChart"></canvas>
+          </div>
+          <div class="skill-Chart_area devChart">
+            <canvas id="devChart"></canvas>
+          </div>
+        </div>
+        <div class="skill-Chart_text_inner">
+          <p class="skill-Chart_text">
+            チャートの見方としては「1: 個人開発などで軽く使用した程度」、「2: 実務で使用していて調べながら実装が可能」、「3: 実務での使用が多くあり問題なく実装する事が可能」、「４: 実務レベルで熟知していて自由に駆使できる」という感じです。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section><!-- skill-Block -->
+
+  <section id="message" class="section msg-Block">
+    <div class="msg-Container st-Container">
+      <div class="msg-Inner">
+        <div class="msg-Title_inner">
+          <h2 class="msg-Title st-Title">MESSAGE</h2>
+        </div>
+        <div class="msg-Content_inner">
+          <h3 class="msg-Content_title">ポートフォリオを見ていただいた皆様へ</h3>
+          <p class="msg-Content_text">
+            日々の忙しさについ忘れてしまいがちですが、今の私があるのは色んな人たちのサポートのおかげです。
+            退職の際に応援してくれた人、技術的に未熟な私にもお仕事を紹介してくださるエージェント、スキルを磨ける環境で働かせてくださったクライアントに、本当に心から感謝しています。
+          </p>
+          <p class="msg-Content_text">
+            様々なWebサービスに触れて人生が変わる体験をしたように、今後は消費するだけでなく、体験価値を届けられるようなエンジニアになりたい。
+            私自身が抱えている課題や周りの身近な人が抱えている問題をエンジニアリングで解決できるようになりたいと考えています。
+          </p>
+          <p class="msg-Content_text">
+            また、ものづくりが好きなので、生涯エンジニアとして社会に貢献し続けたいとも思っています。
+          </p>
+          <p class="msg-Content_text">
+            それを実現するにはどうしたらいいのか。
+          </p>
+          <p class="msg-Content_text">
+            日々進化し続ける技術をキャッチアップするための研鑽はもちろんのこと、
+            クライアントの悩みや課題を解決できるよう、クライアントの目線を培っていく必要があります。
+          </p>
+          <p class="msg-Content_text">
+            まだまだ至らない点はたくさんありますが、時代に合わせた技術を追いかけつつ、
+            クライアントに寄り添ったエンジニアリングができるよう、心がけていきます。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section><!-- msg-Block -->
+
+  <!--<section class="contact-Block">
+    <div class="contact-Container st-Container">
+      <div class="contact-Inner">
+        <div class="contact-Title_inner">
+          <h2 class="contact-Title st-Title">Contact</h2>
+          <p class="contact-Title_text">
+            最後までご覧いただきありがとうございました。このサイトを通して、私のことを少しでも知って
+            いただけたのなら嬉しいです。もしこのサイトや私について何かコメントがありましたら、下記フォームをご利用ください。
+          </p>
+        </div>
+        <form mathod="POST" action="">
+          <div class="contact-Input_area">
+            <input id="name" name="name" type="text">
+          </div>
+          <div class="contact-Input_area">
+            <input id="email" name="email" type="email">
+          </div>
+          <div class="contact-Input_area">
+            <textarea id="textarea" name="message"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section> --><!-- contact-Block -->
+
+  <footer class="footer">
+    <div class="footer-Container st-Container">
+      <div class="footer-Inner">
+        <ul class="footer-List">
+          <li class="footer-Item"><a href="#about" class="footer-Link">ABOUT</a></li>
+          <li class="footer-Item"><a href="#profile" class="footer-Link">PORFILE</a></li>
+          <li class="footer-Item"><a href="#works" class="footer-Link">WORKS</a></li>
+          <li class="footer-Item"><a href="#skill" class="footer-Link">SKILL</a></li>
+          <li class="footer-Item"><a href="#message" class="footer-Link">MESSAGE</a></li>
+        </ul>
+        <div class="footer-Cr_inner">
+          <small class="copyright">copyright@Syu Danjo. All Rights Reserved</small>
+        </div>
+      </div>
+    </div>
+  </footer><!-- footer-Block -->
+
+  <!-- jsファイルの読み込み -->
+  <script src="assets/js/chart.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
