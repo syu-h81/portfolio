@@ -4,6 +4,10 @@ $(window).on('load',function() {
   $('.loading').addClass('loaded');
 });
 
+$(function() {
+	$('.body').fadeIn(1000); //1秒かけてフェードイン！
+});
+
 //ヘッダーの固定
 var header_window = $(window),
     header_height = $('header').height(),

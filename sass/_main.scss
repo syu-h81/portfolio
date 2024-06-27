@@ -405,7 +405,7 @@
           }
         .work-Modal_card {
           width: 80%;
-          padding: 40px 20px;
+          padding: 80px 20px;
           margin: 0 auto;
           background-color: #fafafa;
           color: #333;
@@ -523,7 +523,8 @@
                   }
                 }
                 .work-Modal_card_link {
-                  color: #039be5;
+                  color: #0000ff;
+                  letter-spacing: 1px;
                 }
               }
               .work-Modal_card_dev_area {
@@ -574,7 +575,7 @@
               .modalClose {
                 font-size: 3rem;
                 position: absolute;
-                top: -10%;
+                top: -12%;
                 right: 0;
                 border-radius: 50%;
                 @media(max-width: 760px) {
