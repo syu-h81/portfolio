@@ -1,11 +1,8 @@
 'use strict';
-//ローディング画面の処理
-$(window).on('load',function() {
-  $('.loading').addClass('loaded');
-});
 
+//ページ読み込みの処理
 $(function() {
-	$('.body').fadeIn(1000); //1秒かけてフェードイン！
+	$('.body').fadeIn(2000);
 });
 
 //ヘッダーの固定
