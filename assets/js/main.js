@@ -9,15 +9,19 @@ $(function() {
 var header_window = $(window),
     header_height = $('header').height(),
     _header = $('.header'),
+    page_top,
     top_height;
 
 header_window.scroll(function(){
   top_height = $('.hero-Block').height();
+  page_top = $('#page_top');
   if(header_window.scrollTop() > top_height){
     _header.addClass('fixed');
+    page_top.addClass('show');
   }
   else{
     _header.removeClass('fixed');
+    page_top.removeClass('show');
   }
 });
 
@@ -254,4 +258,3 @@ var myChart = new Chart(ctx, {
     },
   }
 });
-
